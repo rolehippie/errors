@@ -1,0 +1,43 @@
+[Unit]
+Description=Errors
+
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+RestartSec=10s
+EnvironmentFile=/etc/environment
+
+ExecStop=/bin/sh -c '/usr/bin/docker ps | /bin/grep %p 1> /dev/null && /usr/bin/docker stop %p || true'
+ExecStartPre=/bin/sh -c '/usr/bin/docker ps | /bin/grep %p 1> /dev/null && /usr/bin/docker kill %p || true'
+ExecStartPre=/bin/sh -c '/usr/bin/docker ps -a | /bin/grep %p 1> /dev/null && /usr/bin/docker rm %p || true'
+ExecStartPre=/usr/bin/docker pull tboerger/errors:latest
+ExecStart=/usr/bin/docker run --rm \
+  --name %p \
+  --hostname %p \
+  --label traefik.enable=true \
+  --label traefik.docker.network={{ errors_network }} \
+  --label traefik.port=8080 \
+  --label traefik.frontend.passHostHeader=true \
+  --label traefik.frontend.rule=Host:{{ errors_domain }} \
+  --label traefik.frontend.headers.forceSTSHeader=true \
+  --label traefik.frontend.headers.STSIncludeSubdomains=false \
+  --label traefik.frontend.headers.STSPreload=true \
+  --label traefik.frontend.headers.STSSeconds=315360000 \
+  --label traefik.frontend.headers.referrerPolicy=strict-origin-when-cross-origin \
+  --label traefik.frontend.headers.customFrameOptionsValue=SAMEORIGIN \
+  --label traefik.frontend.headers.browserXSSFilter=true \
+  --label traefik.frontend.headers.contentTypeNosniff=true \
+  --env-file /etc/default/errors \
+  --network {{ errors_network }} \
+  --volume /etc/ssl:/etc/ssl:ro \
+  --health-cmd 'curl -sSf http://localhost:8080/metrics' \
+  --health-interval 10s \
+  --health-retries 20 \
+  --health-timeout 10s \
+  --publish 127.0.0.1:8080:8080 \
+  tboerger/errors:latest
+
+[Install]
+WantedBy=multi-user.target

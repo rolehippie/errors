@@ -1,0 +1,2 @@
+errors_domain: '{{ ansible_fqdn }}'
+errors_network: traefik

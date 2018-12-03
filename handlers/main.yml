@@ -1,0 +1,5 @@
+- name: restart errors
+  systemd:
+    name: errors
+    state: restarted
+    daemon_reload: yes
