@@ -1,3 +1,4 @@
+#jinja2: lstrip_blocks: True
 [Unit]
 Description=Errors
 
@@ -16,6 +17,7 @@ ExecStartPre=/usr/bin/docker pull tboerger/errors:latest
 ExecStart=/usr/bin/docker run --rm \
   --name %p \
   --hostname %p \
+{% if errors_traefik_enabled %}
   --label traefik.enable=true \
   --label traefik.docker.network={{ errors_network }} \
   --label traefik.http.services.errors.loadbalancer.server.port=8080 \
@@ -35,6 +37,7 @@ ExecStart=/usr/bin/docker run --rm \
   --label traefik.http.routers.errors-insecure.entrypoints=http \
 {% if errors_middlewares | default(False) %}
   --label traefik.http.routers.errors-insecure.middlewares={{ errors_middlewares | join(",") }} \
+{% endif %}
 {% endif %}
   --env-file /etc/default/errors \
   --network {{ errors_network }} \

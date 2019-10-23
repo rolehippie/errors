@@ -1,2 +1,3 @@
+errors_traefik_enabled: True
 errors_network: traefik
 errors_middlewares: []
