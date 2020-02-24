@@ -1,2 +1,28 @@
+# Standards: 0.1
+---
+# @var errors_image:description: Docker image to use
+errors_image: tboerger/errors:latest
+
+# @var errors_network:description: Docker network to connect to
 errors_network: traefik
-errors_middlewares: []
+
+# @var errors_publish_server:description: Publish the service on that binding
+errors_publish_server:
+
+# @var errors_cert_resolver:description: Cert resolver within traefik
+errors_cert_resolver: default
+
+# @var errors_secure_middlewares:description: Secure middlewares for traefik
+errors_secure_middlewares:
+  - secure@file
+  - errors@file
+
+# @var errors_insecure_middlewares:description: Insecure middlewares for traefik
+errors_insecure_middlewares:
+  - https@file
+  - errors@file
+
+# @var errors_priority:description: Priority within Traefik routing
+errors_priority: '1'
+
+...
