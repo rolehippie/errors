@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: all
+  vars:
+    errors_network: bridge
+    errors_publish_server: 127.0.0.1:8080
+  roles:
+    - role: docker
+    - role: errors
