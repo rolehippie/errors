@@ -13,6 +13,7 @@ galaxy_info:
   galaxy_tags:
     - errors
 
-dependencies: []
+dependencies:
+  - rolehippie.docker
 
 ...
