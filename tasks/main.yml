@@ -19,6 +19,7 @@
     - errors
 
 - name: Create docker network
+  when: errors_network | default(False)
   docker_network:
     name: '{{ errors_network }}'
 
@@ -26,9 +27,9 @@
   systemd:
     name: errors
     state: started
-    daemon_reload: yes
-    masked: no
-    enabled: yes
+    daemon_reload: True
+    masked: False
+    enabled: True
   tags:
     - errors
 
