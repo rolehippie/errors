@@ -4,13 +4,15 @@
 errors_image: tboerger/errors:latest
 
 # @var errors_network:description: Docker network to connect to
-errors_network: traefik
+# @var errors_network:example: $ "traefik"
+errors_network:
 
 # @var errors_publish_server:description: Publish the service on that binding
 errors_publish_server:
 
 # @var errors_cert_resolver:description: Cert resolver within traefik
-errors_cert_resolver: default
+# @var errors_cert_resolver:example: $ "default"
+errors_cert_resolver:
 
 # @var errors_secure_middlewares:description: Secure middlewares for traefik
 errors_secure_middlewares:
