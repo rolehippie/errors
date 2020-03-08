@@ -29,6 +29,12 @@ Cert resolver within traefik
 #### Default value
 
 ```YAML
+errors_cert_resolver:
+```
+
+#### Example usage
+
+```YAML
 errors_cert_resolver: default
 ```
 
@@ -59,6 +65,12 @@ errors_insecure_middlewares:
 Docker network to connect to
 
 #### Default value
+
+```YAML
+errors_network:
+```
+
+#### Example usage
 
 ```YAML
 errors_network: traefik
@@ -98,7 +110,8 @@ errors_secure_middlewares:
 
 ## Dependencies
 
-- '[docker](https://github.com/rolehippie/docker)'
+* [docker](https://github.com/rolehippie/docker)
+* [traefik](https://github.com/rolehippie/traefik)
 
 ## License
 
