@@ -4,7 +4,8 @@
 errors_image: tboerger/errors:latest
 
 # @var errors_network:description: Docker network to connect to
-errors_network: traefik
+# @var errors_network:example: $ "traefik"
+errors_network:
 
 # @var errors_publish_server:description: Publish the service on that binding
 errors_publish_server:
