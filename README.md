@@ -1,8 +1,14 @@
 # errors
 
-[![Build Status](https://cloud.drone.io/api/badges/rolehippie/errors/status.svg)](https://cloud.drone.io/rolehippie/errors)
+[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/errors) [![Build Status](https://img.shields.io/drone/build/rolehippie/errors/master?logo=drone)](https://cloud.drone.io/rolehippie/errors) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/errors)](https://github.com/rolehippie/errors/blob/master/LICENSE) 
 
-Ansible role to configure errors
+Ansible role to install a templateable HTTP errors service 
+
+## Sponsor 
+
+[![Proact Deutschland GmbH](https://proact.eu/wp-content/uploads/2020/03/proact-logo.png)](https://proact.eu) 
+
+Building and improving this Ansible role have been sponsored by my employer **Proact Deutschland GmbH**.
 
 ## Table of content
 
@@ -110,8 +116,8 @@ errors_secure_middlewares:
 
 ## Dependencies
 
-* [docker](https://github.com/rolehippie/docker)
-* [traefik](https://github.com/rolehippie/traefik)
+* [rolehippie.docker](https://github.com/rolehippie/docker)
+* [rolehippie.traefik](https://github.com/rolehippie/traefik)
 
 ## License
 

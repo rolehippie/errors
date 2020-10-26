@@ -1,4 +1,4 @@
-# Standards: 0.1
+# Standards: 1.2
 ---
 # @var errors_image:description: Docker image to use
 errors_image: tboerger/errors:latest
