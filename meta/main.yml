@@ -1,22 +1,37 @@
-# Standards: 0.1
+# Standards: 1.2
 ---
 # @meta author:value: [Thomas Boerger](https://github.com/tboerger)
+# @meta description: >
+# [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/errors)
+# [![Build Status](https://img.shields.io/drone/build/rolehippie/errors/master?logo=drone)](https://cloud.drone.io/rolehippie/errors)
+# [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/errors)](https://github.com/rolehippie/errors/blob/master/LICENSE)
+#
+# Ansible role to install a templateable HTTP errors service
+#
+# ## Sponsor
+#
+# [![Proact Deutschland GmbH](https://proact.eu/wp-content/uploads/2020/03/proact-logo.png)](https://proact.eu)
+#
+# Building and improving this Ansible role have been sponsored by my employer **Proact Deutschland GmbH**.
+# @end
 # @meta dependencies:value: >
-# [docker](https://github.com/rolehippie/docker)
-# [traefik](https://github.com/rolehippie/traefik)
+# [rolehippie.docker](https://github.com/rolehippie/docker)
+# [rolehippie.traefik](https://github.com/rolehippie/traefik)
 # @end
 galaxy_info:
   author: Thomas Boerger
-  description: Ansible role to configure errors
+  description: Ansible role to install a templateable HTTP errors service
   license: Apache-2.0
-  min_ansible_version: 2.5
+  min_ansible_version: 2.10
   platforms:
     - name: Ubuntu
       versions:
-        - xenial
         - bionic
+        - focal
   galaxy_tags:
     - errors
+    - http
+    - service
 
 dependencies: []
 
