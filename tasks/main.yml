@@ -6,6 +6,9 @@
   template:
     src: default.j2
     dest: /etc/default/errors
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
   tags:
     - errors
 
@@ -15,6 +18,9 @@
   template:
     src: service.j2
     dest: /etc/systemd/system/errors.service
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
   tags:
     - errors
 
