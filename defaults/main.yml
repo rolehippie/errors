@@ -1,7 +1,11 @@
 # Standards: 1.2
 ---
+# @var errors_version:description: Version of the release to install
+# renovate: datasource=docker depName=webhippie/errors
+errors_version: 1.1.0
+
 # @var errors_image:description: Docker image to use
-errors_image: tboerger/errors:latest
+errors_image: "webhippie/errors:{{ errors_version }}"
 
 # @var errors_network:description: Docker network to connect to
 # @var errors_network:example: $ "traefik"
