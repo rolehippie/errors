@@ -18,6 +18,7 @@ Building and improving this Ansible role have been sponsored by my current and p
   - [errors_priority](#errors_priority)
   - [errors_publish_server](#errors_publish_server)
   - [errors_secure_middlewares](#errors_secure_middlewares)
+  - [errors_version](#errors_version)
 - [Discovered Tags](#discovered-tags)
 - [Dependencies](#dependencies)
 - [License](#license)
@@ -50,7 +51,7 @@ Docker image to use
 #### Default value
 
 ```YAML
-errors_image: tboerger/errors:latest
+errors_image: webhippie/errors:{{ errors_version }}
 ```
 
 ### errors_insecure_middlewares
@@ -111,6 +112,16 @@ Secure middlewares for traefik
 errors_secure_middlewares:
   - secure@file
   - errors@file
+```
+
+### errors_version
+
+Version of the release to install
+
+#### Default value
+
+```YAML
+errors_version: 1.1.0
 ```
 
 ## Discovered Tags
