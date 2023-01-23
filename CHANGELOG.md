@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/rolehippie/errors/compare/v1.0.0...v1.1.0) (2023-01-23)
+
+
+### Features
+
+* add configurable docker image version ([87ec6b1](https://github.com/rolehippie/errors/commit/87ec6b1acadcf9eb614be6b1ea226b10f0c357de))
+
 ## 1.0.0 (2023-01-05)
 
 
