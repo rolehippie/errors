@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/rolehippie/errors/compare/v1.1.0...v1.1.1) (2023-05-12)
+
+
+### Bugfixes
+
+* use right port for healthcheck ([650db33](https://github.com/rolehippie/errors/commit/650db33fa8be56c03c453c8f9ed4f0d1be83ebd2))
+
 ## [1.1.0](https://github.com/rolehippie/errors/compare/v1.0.0...v1.1.0) (2023-01-23)
 
 
