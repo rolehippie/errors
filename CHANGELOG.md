@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/rolehippie/errors/compare/v1.1.1...v1.1.2) (2023-05-12)
+
+
+### Bugfixes
+
+* curl is not installed in container ([7df515d](https://github.com/rolehippie/errors/commit/7df515da87bb13028763dba291f31aa9db5f468e))
+
 ## [1.1.1](https://github.com/rolehippie/errors/compare/v1.1.0...v1.1.1) (2023-05-12)
 
 
