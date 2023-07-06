@@ -23,6 +23,7 @@ Building and improving this Ansible role have been sponsored by my current and p
   - [errors_network](#errors_network)
   - [errors_priority](#errors_priority)
   - [errors_publish_server](#errors_publish_server)
+  - [errors_pull_image](#errors_pull_image)
   - [errors_secure_middlewares](#errors_secure_middlewares)
   - [errors_version](#errors_version)
 - [Discovered Tags](#discovered-tags)
@@ -111,6 +112,16 @@ Publish the service on that binding
 
 ```YAML
 errors_publish_server:
+```
+
+### errors_pull_image
+
+Pull image as part of the tasks
+
+#### Default value
+
+```YAML
+errors_pull_image: true
 ```
 
 ### errors_secure_middlewares
