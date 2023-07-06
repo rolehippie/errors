@@ -24,10 +24,22 @@
   tags:
     - errors
 
+- name: Pull docker image
+  when:
+    - errors_pull_image
+  docker_image:
+    name: "{{ errors_image }}"
+    source: pull
+  tags:
+    - errors
+
 - name: Create docker network
-  when: errors_network | default(False)
+  when:
+    - errors_network | default(False)
   docker_network:
     name: '{{ errors_network }}'
+  tags:
+    - errors
 
 - name: Start errors service
   systemd:
