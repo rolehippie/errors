@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/rolehippie/errors/compare/v1.1.2...v1.2.0) (2023-07-10)
+
+
+### Features
+
+* move image pull to tasks from service ([ee6f59e](https://github.com/rolehippie/errors/commit/ee6f59e95de7e6493b9f9dd8e7e485c8e92e0358))
+
 ## [1.1.2](https://github.com/rolehippie/errors/compare/v1.1.1...v1.1.2) (2023-05-12)
 
 
