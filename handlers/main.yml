@@ -1,6 +1,6 @@
 ---
 - name: Restart errors
-  systemd:
+  ansible.builtin.systemd:
     name: errors
     state: restarted
     daemon_reload: True

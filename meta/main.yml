@@ -16,7 +16,6 @@
 # @end
 # @meta dependencies:value: >
 # [rolehippie.docker](https://github.com/rolehippie/docker)
-# [rolehippie.traefik](https://github.com/rolehippie/traefik)
 # @end
 galaxy_info:
   role_name: errors

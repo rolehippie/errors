@@ -153,7 +153,6 @@ errors_version: 1.1.0
 ## Dependencies
 
 - [rolehippie.docker](https://github.com/rolehippie/docker)
-- [rolehippie.traefik](https://github.com/rolehippie/traefik)
 
 ## License
 
