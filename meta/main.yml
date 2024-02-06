@@ -1,4 +1,3 @@
-# Standards: 1.2
 ---
 # @meta author:value: [Thomas Boerger](https://github.com/tboerger)
 # @meta description: >
@@ -17,7 +16,6 @@
 # @end
 # @meta dependencies:value: >
 # [rolehippie.docker](https://github.com/rolehippie/docker)
-# [rolehippie.traefik](https://github.com/rolehippie/traefik)
 # @end
 galaxy_info:
   role_name: errors
@@ -29,7 +27,6 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - bionic
         - focal
         - jammy
   galaxy_tags:

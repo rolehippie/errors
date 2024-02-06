@@ -1,9 +1,8 @@
-# Standards: 1.2
 ---
 - name: Write env config
   notify:
     - Restart errors
-  template:
+  ansible.builtin.template:
     src: default.j2
     dest: /etc/default/errors
     owner: root
@@ -15,7 +14,7 @@
 - name: Write service file
   notify:
     - Restart errors
-  template:
+  ansible.builtin.template:
     src: service.j2
     dest: /etc/systemd/system/errors.service
     owner: root
@@ -27,7 +26,7 @@
 - name: Pull docker image
   when:
     - errors_pull_image
-  docker_image:
+  community.docker.docker_image:
     name: "{{ errors_image }}"
     source: pull
   tags:
@@ -36,13 +35,13 @@
 - name: Create docker network
   when:
     - errors_network | default(False)
-  docker_network:
+  community.docker.docker_network:
     name: '{{ errors_network }}'
   tags:
     - errors
 
 - name: Start errors service
-  systemd:
+  ansible.builtin.systemd:
     name: errors
     state: started
     daemon_reload: True
