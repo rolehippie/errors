@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.0](https://github.com/rolehippie/errors/compare/v2.0.0...v3.0.0) (2025-10-13)
+
+
+### Features
+
+* **major:** update webhippie/errors docker tag to v2 ([fa6094b](https://github.com/rolehippie/errors/commit/fa6094bb02113b710cd4b5a0769f6030b5d57a70))
+
 ## [2.0.0](https://github.com/rolehippie/errors/compare/v1.2.0...v2.0.0) (2024-02-12)
 
 
