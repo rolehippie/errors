@@ -30,11 +30,15 @@ galaxy_info:
       versions:
         - focal
         - jammy
+        - noble
   galaxy_tags:
     - errors
     - http
     - service
 
 dependencies: []
+
+collections:
+  - community.docker
 
 ...

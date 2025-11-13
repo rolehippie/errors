@@ -16,7 +16,7 @@ ExecStart=/usr/bin/docker run --rm \
   --name %p \
   --hostname %p \
   --label traefik.enable=true \
-{% if errors_network | default(False) %}
+{% if errors_network | default(false) %}
   --label traefik.docker.network={{ errors_network }} \
 {% endif %}
   --label traefik.http.services.errors.loadbalancer.server.port=8080 \
@@ -27,25 +27,25 @@ ExecStart=/usr/bin/docker run --rm \
   --label traefik.http.routers.errors.service=errors@docker \
   --label traefik.http.routers.errors.entrypoints=https \
   --label traefik.http.routers.errors.tls=true \
-{% if errors_cert_resolver | default(False) %}
+{% if errors_cert_resolver | default(false) %}
   --label traefik.http.routers.errors.tls.certresolver={{ errors_cert_resolver }} \
 {% endif %}
-{% if errors_secure_middlewares | default(False) %}
+{% if errors_secure_middlewares | default(false) %}
   --label traefik.http.routers.errors.middlewares={{ errors_secure_middlewares | join(",") }} \
 {% endif %}
   --label traefik.http.routers.errors-insecure.rule="PathPrefix(`/`)" \
   --label traefik.http.routers.errors-insecure.priority={{ errors_priority }} \
   --label traefik.http.routers.errors-insecure.service=errors@docker \
   --label traefik.http.routers.errors-insecure.entrypoints=http \
-{% if errors_insecure_middlewares | default(False) %}
+{% if errors_insecure_middlewares | default(false) %}
   --label traefik.http.routers.errors-insecure.middlewares={{ errors_insecure_middlewares | join(",") }} \
 {% endif %}
   --env-file /etc/default/errors \
-{% if errors_network | default(False) %}
+{% if errors_network | default(false) %}
   --network {{ errors_network }} \
 {% endif %}
   --volume /etc/ssl:/etc/ssl:ro \
-{% if errors_publish_server | default(False) %}
+{% if errors_publish_server | default(false) %}
   --publish {{ errors_publish_server }}:8080 \
 {% endif %}
   --health-cmd 'wget -q --spider http://localhost:8081/metrics' \
