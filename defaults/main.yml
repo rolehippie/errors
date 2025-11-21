@@ -1,7 +1,7 @@
 ---
 # @var errors_version:description: Version of the release to install
 # renovate: datasource=docker depName=webhippie/errors
-errors_version: 2.1.1
+errors_version: 2.2.2
 
 # @var errors_image:description: Docker image to use
 errors_image: "webhippie/errors:{{ errors_version }}"
