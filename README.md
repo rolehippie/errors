@@ -142,7 +142,7 @@ Version of the release to install
 #### Default value
 
 ```YAML
-errors_version: 2.1.1
+errors_version: 2.2.2
 ```
 
 ## Discovered Tags
