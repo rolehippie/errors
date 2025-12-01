@@ -1,5 +1,14 @@
 # Changelog
 
+## [4.0.0](https://github.com/rolehippie/errors/compare/v3.0.1...v4.0.0) (2025-12-01)
+
+
+### Features
+
+* apply new repo structure and update linting ([6c92a5f](https://github.com/rolehippie/errors/commit/6c92a5fdb957998ecbd1da91b54ad59fe2ab9c47))
+* **major:** update dependency community.docker to v5 ([ce7ffc6](https://github.com/rolehippie/errors/commit/ce7ffc6e0843d954ee25df509e6cc0442be9fe5c))
+* **minor:** update webhippie/errors docker tag to v2.2.2 ([02c47ca](https://github.com/rolehippie/errors/commit/02c47ca10df9a366f19ec43d2e0376d2b62c8252))
+
 ## [3.0.1](https://github.com/rolehippie/errors/compare/v3.0.0...v3.0.1) (2025-11-03)
 
 
