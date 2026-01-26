@@ -1,5 +1,18 @@
 # Changelog
 
+## [4.1.1](https://github.com/rolehippie/errors/compare/v4.1.0...v4.1.1) (2026-01-26)
+
+### Dependencies
+
+* **patch:** update webhippie/errors docker tag to v2.3.2 ([#56](https://github.com/rolehippie/errors/issues/56)) ([5692896](https://github.com/rolehippie/errors/commit/569289678fa78776b1792e3552b6d9fc33cb2849))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([a1760f6](https://github.com/rolehippie/errors/commit/a1760f65b48a9954d039fe014d5d40ef1e6a05a4))
+* **flake:** updated lockfile [skip ci] ([e826192](https://github.com/rolehippie/errors/commit/e826192e658bc09067c1c948a1d22cbcb5fcaddf))
+* **flake:** updated lockfile [skip ci] ([3583e3f](https://github.com/rolehippie/errors/commit/3583e3ff8e11f167abf17e712348216a09d32440))
+* **flake:** updated lockfile [skip ci] ([e2203be](https://github.com/rolehippie/errors/commit/e2203be55a6de34d9b7130a8e24787157ddf8962))
+
 ## [4.1.0](https://github.com/rolehippie/errors/compare/v4.0.0...v4.1.0) (2025-12-29)
 
 
