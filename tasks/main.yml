@@ -34,7 +34,8 @@
 
 - name: Create docker network
   when:
-    - false if errors_network is none else (errors_network | length > 0)
+    - errors_network is not none
+    - errors_network | length > 0
   community.docker.docker_network:
     name: '{{ errors_network }}'
   tags:
