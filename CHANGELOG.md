@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.1.3](https://github.com/rolehippie/errors/compare/v4.1.2...v4.1.3) (2026-03-04)
+
+### Bugfixes
+
+* improve conditional behavior ([48c906c](https://github.com/rolehippie/errors/commit/48c906c6d78292a9c9c034e14ab18521e4f8ebd0))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([0394ca2](https://github.com/rolehippie/errors/commit/0394ca29fdcb72facb66f9cd3e3aa7ab15b31eb5))
+* replace nixfmt package ([877b77e](https://github.com/rolehippie/errors/commit/877b77ecc4bb24360969d7c0641d9b86440dc4e6))
+
 ## [4.1.2](https://github.com/rolehippie/errors/compare/v4.1.1...v4.1.2) (2026-03-02)
 
 ### Dependencies
