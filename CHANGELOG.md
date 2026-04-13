@@ -1,5 +1,22 @@
 # Changelog
 
+## [4.2.0](https://github.com/rolehippie/errors/compare/v4.1.3...v4.2.0) (2026-04-13)
+
+### Dependencies
+
+* **minor:** update dependency community.docker to >=5.1.0,<5.2.0 ([#61](https://github.com/rolehippie/errors/issues/61)) ([9416b98](https://github.com/rolehippie/errors/commit/9416b9843b3b0d3c5677278570fae9032f3e49c3))
+* **minor:** update dependency community.docker to >=5.2.0,<5.3.0 ([#63](https://github.com/rolehippie/errors/issues/63)) ([7cc0450](https://github.com/rolehippie/errors/commit/7cc045090a26c934a0fe91c1104dd7dd53d37ea1))
+* **minor:** update webhippie/errors docker tag to v2.4.0 ([#62](https://github.com/rolehippie/errors/issues/62)) ([53209b2](https://github.com/rolehippie/errors/commit/53209b212abac51026218abc46aa99156b0033b4))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([6566491](https://github.com/rolehippie/errors/commit/65664913b47826a3926e5afae39f4608d2ccf3e5))
+* **flake:** updated lockfile [skip ci] ([7042bb3](https://github.com/rolehippie/errors/commit/7042bb3e1fe47e4cbf3978d784ae17d256604d99))
+* **flake:** updated lockfile [skip ci] ([b284cd5](https://github.com/rolehippie/errors/commit/b284cd5899a8b418f6b5743d306fe24f07e60a4d))
+* **flake:** updated lockfile [skip ci] ([0176a2a](https://github.com/rolehippie/errors/commit/0176a2a3b553b43053c4d1d1f55b73499235baad))
+* **flake:** updated lockfile [skip ci] ([bfc4107](https://github.com/rolehippie/errors/commit/bfc41075d0d997eac4ceb99814304499541fd593))
+* **flake:** updated lockfile [skip ci] ([2ea3a7a](https://github.com/rolehippie/errors/commit/2ea3a7a0edff603da04576d1a8b2552965aff6a5))
+
 ## [4.1.3](https://github.com/rolehippie/errors/compare/v4.1.2...v4.1.3) (2026-03-04)
 
 ### Bugfixes
