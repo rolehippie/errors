@@ -1,5 +1,7 @@
 # Changelog
 
+## [4.4.0](https://github.com/rolehippie/errors/compare/v4.3.0...v4.4.0) (2026-06-29)
+
 ## [4.3.0](https://github.com/rolehippie/errors/compare/v4.2.2...v4.3.0) (2026-06-15)
 
 ### Dependencies
