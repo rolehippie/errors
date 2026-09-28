@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.10.1](https://github.com/rolehippie/errors/compare/v4.10.0...v4.10.1) (2026-09-28)
+
+### Dependencies
+
+* **mise:** update dependency pipx:ansible-lint to v26.9.0 ([#92](https://github.com/rolehippie/errors/issues/92)) ([2fb2e20](https://github.com/rolehippie/errors/commit/2fb2e20b76b4a1813c9e8adaf356a466a40d369e))
+* **mise:** update dependency pipx:molecule to v26.9.0 ([#93](https://github.com/rolehippie/errors/issues/93)) ([7a2e33c](https://github.com/rolehippie/errors/commit/7a2e33cbf6b2637e5516c03cba6b2b9780034d48))
+* **patch:** update webhippie/errors docker tag to v2.9.1 ([#91](https://github.com/rolehippie/errors/issues/91)) ([3a260d8](https://github.com/rolehippie/errors/commit/3a260d8dd69d1f962997f8984bdde75291ca66bc))
+
 ## [4.10.0](https://github.com/rolehippie/errors/compare/v4.9.0...v4.10.0) (2026-09-21)
 
 ### Dependencies
