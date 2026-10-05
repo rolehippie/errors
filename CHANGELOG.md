@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.11.0](https://github.com/rolehippie/errors/compare/v4.10.1...v4.11.0) (2026-10-05)
+
+### Dependencies
+
+* **minor:** update dependency community.docker to >=5.4.0,<5.5.0 ([#96](https://github.com/rolehippie/errors/issues/96)) ([4d4ae4d](https://github.com/rolehippie/errors/commit/4d4ae4d254ced54274ccfde3d9d719d5afb74c35))
+* **mise:** update dependency prek to v0.5.4 ([#94](https://github.com/rolehippie/errors/issues/94)) ([e880e01](https://github.com/rolehippie/errors/commit/e880e0157664e6160fdc28f8922e646b75d89adb))
+* **mise:** update dependency prek to v0.5.5 ([#97](https://github.com/rolehippie/errors/issues/97)) ([278d06e](https://github.com/rolehippie/errors/commit/278d06ecd266c3761b0cddf24810307f05a303ca))
+
 ## [4.10.1](https://github.com/rolehippie/errors/compare/v4.10.0...v4.10.1) (2026-09-28)
 
 ### Dependencies
