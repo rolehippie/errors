@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.12.0](https://github.com/rolehippie/errors/compare/v4.11.1...v4.12.0) (2026-10-19)
+
+### Dependencies
+
+* **minor:** update webhippie/errors docker tag to v2.10.0 ([#103](https://github.com/rolehippie/errors/issues/103)) ([bc51637](https://github.com/rolehippie/errors/commit/bc51637fd70cdde9f955dd1e0367605e7f0734a6))
+* **mise:** update dependency pipx:ansible-lint to v26.10.1 ([#104](https://github.com/rolehippie/errors/issues/104)) ([0c2665d](https://github.com/rolehippie/errors/commit/0c2665d1dafb4aef3533a023a8e2e683b4d0797a))
+* **mise:** update dependency prek to v0.5.6 ([#105](https://github.com/rolehippie/errors/issues/105)) ([efe81b7](https://github.com/rolehippie/errors/commit/efe81b7c33c8527f4c7382ead41bd6cc604aaf2a))
+
 ## [4.11.1](https://github.com/rolehippie/errors/compare/v4.11.0...v4.11.1) (2026-10-12)
 
 ### Dependencies
